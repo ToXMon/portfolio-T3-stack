@@ -14,7 +14,7 @@ This portfolio website is built on the cutting-edge Create T3 Stack, demonstrati
 
 This project leverages a powerful and modern tech stack:
 
-- **Next.js 14**: For server-side rendering and optimal performance
+- **Next.js 16**: For server-side rendering and optimal performance
 - **React 18**: For building a dynamic and interactive user interface
 - **TypeScript**: For type-safe code and improved developer experience
 - **Tailwind CSS**: For rapid and responsive styling
@@ -48,6 +48,93 @@ The site highlights several public projects:
 
 ## Get in Touch
 
-Interested in collaborating or learning more? The site provides easy ways to connect through GitHub and email <tolushekoni@gmail.com>.
+Interested in collaborating or learning more? The site provides easy ways to connect through GitHub and email <tolu.a.shekoni@gmail.com>.
+
+## Deployment to Vercel
+
+This project is optimized for deployment on Vercel. Follow these steps to deploy:
+
+### Prerequisites
+
+- A [Vercel account](https://vercel.com/signup)
+- A [SendGrid account](https://sendgrid.com/) for contact form functionality
+- A Vercel Postgres database (optional, for storing contact form submissions)
+
+### Environment Variables
+
+Before deploying, you need to set up the following environment variables in your Vercel project settings:
+
+1. **Database (Vercel Postgres)**
+   - `POSTGRES_PRISMA_URL` - Automatically set when you connect Vercel Postgres
+   - `POSTGRES_URL_NON_POOLING` - Automatically set when you connect Vercel Postgres
+
+2. **SendGrid API Key**
+   - `SENDGRID_API_KEY` - Get your API key from [SendGrid Settings](https://app.sendgrid.com/settings/api_keys)
+
+3. **Node Environment**
+   - `NODE_ENV` - Set to `production` (automatically set by Vercel)
+
+### Deployment Steps
+
+#### Option 1: Deploy with Vercel CLI
+
+```bash
+# Install Vercel CLI globally
+npm i -g vercel
+
+# Login to Vercel
+vercel login
+
+# Deploy
+vercel
+```
+
+#### Option 2: Deploy via Git Integration
+
+1. Push your code to GitHub
+2. Go to [Vercel Dashboard](https://vercel.com/new)
+3. Import your GitHub repository
+4. Configure your environment variables in the Vercel project settings
+5. Deploy!
+
+### Post-Deployment Setup
+
+1. **Connect Vercel Postgres** (optional)
+   - In your Vercel project dashboard, go to the "Storage" tab
+   - Create a new Postgres database
+   - Connect it to your project
+   - Run migrations: `npx prisma migrate deploy`
+
+2. **Configure SendGrid**
+   - Add your SendGrid API key to environment variables
+   - Verify the sender email address in SendGrid
+
+3. **Test the deployment**
+   - Visit your deployed URL
+   - Test the contact form to ensure email functionality works
+
+### Build Configuration
+
+The project uses the following build configuration (defined in `vercel.json`):
+
+```json
+{
+  "buildCommand": "npm run build",
+  "framework": "nextjs",
+  "outputDirectory": ".next"
+}
+```
+
+### Troubleshooting
+
+- **Build fails**: Check that all environment variables are properly set
+- **Contact form not working**: Verify your SendGrid API key is valid and the sender email is verified
+- **Database errors**: Ensure Vercel Postgres is connected and migrations are run
+
+For more information, visit the [Vercel Documentation](https://vercel.com/docs).
+
+## Get in Touch
+
+Interested in collaborating or learning more? The site provides easy ways to connect through GitHub and email <tolu.a.shekoni@gmail.com>.
 
 Built with passion and powered by the Create T3 Stack. © 2024 Tolu Shekoni

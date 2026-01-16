@@ -10,8 +10,8 @@ import Navbar from "@/components/Global/navbar";
 
 
 export const metadata: Metadata = {
-  title: "RobertHavelaar.dev",
-  description: "A portfolio of my work",
+  title: "Tolu Shekoni - Portfolio",
+  description: "Portfolio of Tolu Shekoni - Developer, Data Scientist, Engineer, and Continuous Improvement Specialist",
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en" className={GeistSans.variable}>
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Robert Havelaar</title>
+        <title>Tolu Shekoni</title>
       </head>
       <body className="bg-black">
         <Navbar />

@@ -37,7 +37,7 @@ export function Hero() {
                         track('Hero Section Viewed');
                     }}
                 >
-                    Robert Havelaar
+                    Tolu Shekoni
                 </motion.h1>
 
                 <motion.p
@@ -46,7 +46,7 @@ export function Hero() {
                     animate={{ opacity: 1 }}
                     transition={{ delay: 0.6, duration: 0.8 }}
                 >
-                    Full-Stack Software Engineer | Problem Solver | Innovation Enthusiast
+                    Developer | Data Scientist | Engineer | Continuous Improvement Specialist
                 </motion.p>
 
                 <motion.div
@@ -57,15 +57,15 @@ export function Hero() {
                 >
                     <div className="flex flex-col items-center">
                         <Code size={32} className="text-blue-500 mb-2" />
-                        <span className="text-neutral-300">Dependable</span>
+                        <span className="text-neutral-300">Innovative</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Briefcase size={32} className="text-green-500 mb-2" />
-                        <span className="text-neutral-300">Ethical</span>
+                        <span className="text-neutral-300">Analytical</span>
                     </div>
                     <div className="flex flex-col items-center">
                         <Zap size={32} className="text-yellow-500 mb-2" />
-                        <span className="text-neutral-300">Passionate</span>
+                        <span className="text-neutral-300">Data-Driven</span>
                     </div>
                 </motion.div>
 
@@ -75,7 +75,7 @@ export function Hero() {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ delay: 1, duration: 0.8 }}
                 >
-                    <Link href="https://github.com/EastTexasElectronics" passHref>
+                    <Link href="https://github.com/ToXMon" passHref>
                         <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}
@@ -90,7 +90,7 @@ export function Hero() {
                             <span>View my GitHub</span>
                         </motion.div>
                     </Link>
-                    <Link href="mailto:rmhavelaar@gmail.com" passHref>
+                    <Link href="mailto:tolushekoni@gmail.com" passHref>
                         <motion.div
                             whileHover={{ scale: 1.05 }}
                             whileTap={{ scale: 0.95 }}

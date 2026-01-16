@@ -1,10 +1,10 @@
-# Robert Havelaar's Portfolio - Powered by Create T3 Stack
+# Tolu Shekoni's Portfolio - Powered by Create T3 Stack
 
-Welcome to the repository for roberthavelaar.dev - a showcase of my full-stack software engineering open projects.
+Welcome to the repository for Tolu Shekoni's portfolio - a showcase of expertise in software development, data science, engineering, and continuous improvement.
 
 ## About This Site
 
-This portfolio website is built on the cutting-edge Create T3 Stack, demonstrating my expertise in modern web development. The site features:
+This portfolio website is built on the cutting-edge Create T3 Stack, demonstrating expertise in modern web development. The site features:
 
 - A sleek, responsive design with a dark theme for optimal viewing
 - Interactive project showcases with smooth animations
@@ -31,7 +31,7 @@ Additional technologies include:
 - Vercel Postgres for database storage
 
 Component Libraries:
-I used a mix of of component that were built by myself, and some from Shadn/UI and Acertinity. All components have been customized to fit the theme and style of the site as well as refactored for better performance, typesafty and accessibility.
+A mix of components that were built custom, and some from Shadn/UI and Acertinity. All components have been customized to fit the theme and style of the site as well as refactored for better performance, type safety and accessibility.
 
 - Various Radix UI components for enhanced UI elements
 - Shadcn/UI
@@ -39,15 +39,15 @@ I used a mix of of component that were built by myself, and some from Shadn/UI a
 
 ## Featured Projects
 
-The site highlights several of public faci projects:
+The site highlights several public projects:
 
-1. **SVG 2 Liquid**: A macOS app for converting SVG files to Shopify Liquid templates
-2. **Nerd Stuff of Alabama's Website**: A Shopify Liquid eCommerce solution
-3. **Nerd Stuff of Alabama's Mobile App**: An iOS and Android eCommerce app
-4. **File Tree Generator Multiverse**: A command-line tool available in multiple programming languages
+1. **Web3 Portfolio**: Blockchain and decentralized application development showcase
+2. **Data Science Projects**: Machine learning models and analytics solutions
+3. **Engineering Solutions**: Process optimization and continuous improvement projects
+4. **Portfolio Website**: This site built with the T3 stack
 
 ## Get in Touch
 
-Interested in collaborating or learning more? The site provides easy ways to connect with Robert through GitHub and email <RMHavelaar@gmail.com>.
+Interested in collaborating or learning more? The site provides easy ways to connect through GitHub and email <tolushekoni@gmail.com>.
 
-Built with passion and powered by the Create T3 Stack. © 2023 Robert Havelaar
+Built with passion and powered by the Create T3 Stack. © 2024 Tolu Shekoni

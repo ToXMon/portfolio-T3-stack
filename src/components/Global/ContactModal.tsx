@@ -110,7 +110,7 @@ const ContactModal: React.FC<ContactModalProps> = () => {
             console.error('Error submitting form', error)
             toast({
                 title: "Error",
-                description: "There was a problem sending your message. Please try again or email me at tolushekoni@gmail.com.",
+                description: "There was a problem sending your message. Please try again or email me at tolu.a.shekoni@gmail.com.",
                 variant: "destructive",
             })
         } finally {
@@ -182,8 +182,8 @@ const ContactModal: React.FC<ContactModalProps> = () => {
                         {/* Description with mailto link */}
                         <p className="text-neutral-300 mb-4 text-center">
                             Fill out this form or email me directly at{' '}
-                            <a href="mailto:tolushekoni@gmail.com" className="text-blue-400 hover:underline" onClick={handleLinkClick}>
-                                tolushekoni@gmail.com
+                            <a href="mailto:tolu.a.shekoni@gmail.com" className="text-blue-400 hover:underline" onClick={handleLinkClick}>
+                                tolu.a.shekoni@gmail.com
                             </a>
                         </p>
 

@@ -4,12 +4,18 @@ import { z } from "zod";
 export const env = createEnv({
   server: {
     NODE_ENV: z.enum(["development", "test", "production"]),
+    POSTGRES_PRISMA_URL: z.string().url().optional(),
+    POSTGRES_URL_NON_POOLING: z.string().url().optional(),
+    SENDGRID_API_KEY: z.string().optional(),
   },
 
   client: {},
 
   runtimeEnv: {
     NODE_ENV: process.env.NODE_ENV,
+    POSTGRES_PRISMA_URL: process.env.POSTGRES_PRISMA_URL,
+    POSTGRES_URL_NON_POOLING: process.env.POSTGRES_URL_NON_POOLING,
+    SENDGRID_API_KEY: process.env.SENDGRID_API_KEY,
   },
   skipValidation: !!process.env.SKIP_ENV_VALIDATION,
   emptyStringAsUndefined: true,

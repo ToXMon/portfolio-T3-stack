@@ -36,14 +36,14 @@ export async function POST(request: Request) {
 
     const userMsg: MailDataRequired = {
       to: email,
-      from: "tolushekoni@gmail.com",
+      from: "tolu.a.shekoni@gmail.com",
       subject: "Thank you for contacting Tolu Shekoni",
       text: `Dear ${name},\n\nThank you for contacting me. I have received your message and will get back to you as soon as possible.\n\nBest regards,\nTolu Shekoni`,
     };
 
     const adminMsg: MailDataRequired = {
-      to: "tolushekoni@gmail.com",
-      from: "tolushekoni@gmail.com",
+      to: "tolu.a.shekoni@gmail.com",
+      from: "tolu.a.shekoni@gmail.com",
       subject: "New Contact Form Submission",
       text: `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nReason: ${reason ?? "Not specified"}\nMessage: ${message}`,
     };

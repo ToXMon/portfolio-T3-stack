@@ -24,54 +24,80 @@ type Card = {
  */
 const cards: Card[] = [
     {
-        description: 'Web3 portfolio showcasing blockchain and decentralized application development',
+        description: 'Stunning Web3 portfolio featuring blockchain innovation and DApps',
         title: 'Web3 Portfolio',
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/Logo%20design.webp',
-        ctaText: 'Explore',
-        ctaOpenText: 'Visit Site',
+        ctaText: 'Discover',
+        ctaOpenText: '🚀 Explore Live Site',
         ctaLink: 'https://toxmon.github.io/web3-portfolio/',
         content: () => (
             <p>
-                A comprehensive portfolio showcasing expertise in Web3 technologies, blockchain development, and decentralized applications. Features interactive demos and project showcases.
+                A comprehensive portfolio showcasing expertise in Web3 technologies, blockchain development, and decentralized applications. Features interactive demos and project showcases including smart contracts, voting DApps, and NFT projects.
             </p>
         ),
     },
     {
-        description: "Data science projects and analytics solutions",
-        title: "Data Science Portfolio",
+        description: "Interactive finance analytics and case studies with real-world applications",
+        title: "Finance Analytics Suite",
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/FTG%20Icon%20(3).png',
-        ctaText: 'Explore',
-        ctaOpenText: 'View Projects',
-        ctaLink: 'https://github.com/ToXMon',
+        ctaText: 'Discover',
+        ctaOpenText: '📊 View Case Studies',
+        ctaLink: 'https://github.com/tolu-jnj/Finance_Case_Studies',
         content: () => (
             <p>
-                Collection of data science projects featuring machine learning models, predictive analytics, and data visualization. Demonstrates expertise in Python, R, and various ML frameworks.
+                Comprehensive finance case studies featuring Jupyter Notebooks with predictive analytics, risk assessment models, and financial data visualization. Demonstrates expertise in quantitative analysis and financial modeling.
             </p>
         ),
     },
     {
-        description: "Engineering solutions and process optimization projects",
-        title: "Engineering Projects",
+        description: "Continuous improvement tools: 6S playbook and operational excellence",
+        title: "Lean Manufacturing Tools",
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/S2L%20Logo.png',
-        ctaText: 'Explore',
-        ctaOpenText: 'Learn More',
-        ctaLink: 'https://github.com/ToXMon',
+        ctaText: 'Discover',
+        ctaOpenText: '⚙️ Explore Tools',
+        ctaLink: 'https://github.com/tolu-jnj/6S-Playbook',
         content: () => (
             <p>
-                Engineering solutions focused on continuous improvement, process optimization, and technical innovation. Includes automation tools and efficiency enhancement systems.
+                Engineering solutions focused on continuous improvement and process optimization. Features the 6S Playbook for operational excellence, workplace organization, and efficiency enhancement systems used in manufacturing environments.
             </p>
         ),
     },
     {
-        description: "This portfolio website built with modern web technologies",
-        title: 'Portfolio Website',
+        description: "Interactive data visualization and business intelligence dashboards",
+        title: "DOT Interactive Platform",
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/Untitled%20design%20logo%20(1).png',
-        ctaText: 'Explore',
-        ctaOpenText: 'Repository',
+        ctaText: 'Discover',
+        ctaOpenText: '📈 View Dashboard',
+        ctaLink: 'https://github.com/tolu-jnj/dot_interactive',
+        content: () => (
+            <p>
+                Python-based interactive data visualization platform featuring real-time analytics, dynamic dashboards, and business intelligence tools. Enables data-driven decision making through compelling visual storytelling.
+            </p>
+        ),
+    },
+    {
+        description: "Engaging GDP learning game with interactive economic simulations",
+        title: "GDP Interactive Game",
+        src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/FTG%20Icon%20(3).png',
+        ctaText: 'Discover',
+        ctaOpenText: '🎮 Play Now',
+        ctaLink: 'https://github.com/tolu-jnj/GDP-Interactive-Game',
+        content: () => (
+            <p>
+                An educational JavaScript game that makes learning economics fun and interactive. Players explore GDP concepts through engaging simulations and real-world economic scenarios.
+            </p>
+        ),
+    },
+    {
+        description: "Modern portfolio site built with cutting-edge T3 Stack technologies",
+        title: 'This Portfolio',
+        src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/S2L%20Logo.png',
+        ctaText: 'Discover',
+        ctaOpenText: '💻 View Code',
         ctaLink: 'https://github.com/ToXMon/portfolio-T3-stack',
         content: () => (
             <p>
-                This website was built with the T3 stack using Next.js, TypeScript, and TailwindCSS, demonstrating modern web development practices and responsive design.
+                This website was built with the T3 stack using Next.js 16, TypeScript, and TailwindCSS, demonstrating modern web development best practices, responsive design, and optimal performance.
             </p>
         ),
     },

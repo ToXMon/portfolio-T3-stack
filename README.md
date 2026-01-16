@@ -133,8 +133,6 @@ The project uses the following build configuration (defined in `vercel.json`):
 
 For more information, visit the [Vercel Documentation](https://vercel.com/docs).
 
-## Get in Touch
-
-Interested in collaborating or learning more? The site provides easy ways to connect through GitHub and email <tolu.a.shekoni@gmail.com>.
+---
 
 Built with passion and powered by the Create T3 Stack. © 2024 Tolu Shekoni

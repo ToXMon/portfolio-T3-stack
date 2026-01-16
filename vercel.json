@@ -6,10 +6,5 @@
   "outputDirectory": ".next",
   "env": {
     "SKIP_ENV_VALIDATION": "true"
-  },
-  "build": {
-    "env": {
-      "SKIP_ENV_VALIDATION": "true"
-    }
   }
 }

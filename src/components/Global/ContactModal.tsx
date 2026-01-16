@@ -47,8 +47,8 @@ const formSchema = z.object({
  * Predefined reasons for contact
  */
 const reasons = [
-    'SVG 2 Liquid Support',
-    'FTG Support',
+    'Data Science Inquiry',
+    'Engineering Consultation',
     'General Inquiry',
     'Employment Opportunity',
     'Other',
@@ -110,7 +110,7 @@ const ContactModal: React.FC<ContactModalProps> = () => {
             console.error('Error submitting form', error)
             toast({
                 title: "Error",
-                description: "There was a problem sending your message. Please try again or email me at Contact@EastTexasElectronics.com.",
+                description: "There was a problem sending your message. Please try again or email me at tolushekoni@gmail.com.",
                 variant: "destructive",
             })
         } finally {
@@ -177,13 +177,13 @@ const ContactModal: React.FC<ContactModalProps> = () => {
 
                         {/* Modal title */}
                         <h2 id="contact-modal-title"
-                            className="text-2xl text-center font-bold mb-4 text-neutral-300">Contact Us</h2>
+                            className="text-2xl text-center font-bold mb-4 text-neutral-300">Contact Me</h2>
 
                         {/* Description with mailto link */}
                         <p className="text-neutral-300 mb-4 text-center">
                             Fill out this form or email me directly at{' '}
-                            <a href="mailto:contact@easttexaselectronics.com" className="text-blue-400 hover:underline" onClick={handleLinkClick}>
-                                contact@easttexaselectronics.com
+                            <a href="mailto:tolushekoni@gmail.com" className="text-blue-400 hover:underline" onClick={handleLinkClick}>
+                                tolushekoni@gmail.com
                             </a>
                         </p>
 

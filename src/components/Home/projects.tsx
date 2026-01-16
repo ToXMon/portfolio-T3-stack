@@ -24,85 +24,54 @@ type Card = {
  */
 const cards: Card[] = [
     {
-        description: 'A macOS app to convert SVG files to Shopify Liquid Templates',
-        title: 'SVG 2 Liquid',
-        src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/S2L%20Logo.png',
-        ctaText: 'Explore',
-        ctaOpenText: 'Learn More',
-        ctaLink: 'https://roberthavelaar.dev/S2L',
-        content: () => (
-            <p>
-                Tired of manually converting SVG files to the Shopify Liquid template format manually? This is the app
-                for you, it allows bulk conversion and editing of your SVG files.
-            </p>
-        ),
-    },
-    {
-        description: "Shopify eCommerce website and mobile app",
-        title: "Nerd Stuff of Alabama",
-        src: 'https://i.postimg.cc/p9y4fsSL/NSA-Logo.png',
-        ctaText: 'Explore',
-        ctaOpenText: 'Visit Site',
-        ctaLink: 'https://alnerdstuff.com',
-        content: () => (
-            <p>
-                Nerd Stuff of Alabama is a growing collectables eCommerce business. They are currently using the Minion
-                theme, which is a paid and well-maintained theme. I have modified the source code to add custom features
-                and functionality. I actively maintain their website and provide support when issues arise. I also created a reach native expo app tapping into the Shopify API.
-            </p>
-        ),
-    },
-    {
-        description: "A SaaS platform for creating business reports",
-        title: "AiCaseReport.com",
+        description: 'Web3 portfolio showcasing blockchain and decentralized application development',
+        title: 'Web3 Portfolio',
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/Logo%20design.webp',
         ctaText: 'Explore',
         ctaOpenText: 'Visit Site',
-        ctaLink: 'https://aicasereport.com',
+        ctaLink: 'https://toxmon.github.io/web3-portfolio/',
         content: () => (
             <p>
-                AiCaseReport.com is a project I am working on that allows users to create business reports and case studies with AI.
+                A comprehensive portfolio showcasing expertise in Web3 technologies, blockchain development, and decentralized applications. Features interactive demos and project showcases.
             </p>
         ),
     },
     {
-        description: "A CLI File Tree Generator tool written in various languages",
-        title: 'File Tree Generator Multiverse',
+        description: "Data science projects and analytics solutions",
+        title: "Data Science Portfolio",
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/FTG%20Icon%20(3).png',
         ctaText: 'Explore',
-        ctaOpenText: 'Repository',
-        ctaLink: 'https://github.com/EastTexasElectronics/File-Tree-Generator-Multiverse',
+        ctaOpenText: 'View Projects',
+        ctaLink: 'https://github.com/ToXMon',
         content: () => (
             <p>
-                The FTG project is a Command Line tool that generates a file tree in the specified directory. It has
-                been written in many languages and is available on GitHub. I personally use the Golang version of the
-                tool.
+                Collection of data science projects featuring machine learning models, predictive analytics, and data visualization. Demonstrates expertise in Python, R, and various ML frameworks.
             </p>
         ),
     },
     {
-        description: "Create visual representations of directory tree structures",
-        title: 'File Tree Generator MacOS App',
-        src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/FTG%20Icon%20(3).png',
+        description: "Engineering solutions and process optimization projects",
+        title: "Engineering Projects",
+        src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/S2L%20Logo.png',
         ctaText: 'Explore',
         ctaOpenText: 'Learn More',
-        ctaLink: '/file-tree-generator-app',
+        ctaLink: 'https://github.com/ToXMon',
         content: () => (
             <p>
-                The File Tree Generator is a macOS app that creates Markdown or TXT formatted file trees from your directories, with options for excluding specific patterns and formats. All in an easy to use interface.
+                Engineering solutions focused on continuous improvement, process optimization, and technical innovation. Includes automation tools and efficiency enhancement systems.
             </p>
         ),
     },
     {
-        description: "Interested in checking out the source code for this portfolio?",
-        title: 'My Portfolio',
+        description: "This portfolio website built with modern web technologies",
+        title: 'Portfolio Website',
         src: 'https://igivkjgfrelcauvcnwhl.supabase.co/storage/v1/object/public/Images/Untitled%20design%20logo%20(1).png',
         ctaText: 'Explore',
         ctaOpenText: 'Repository',
-        ctaLink: 'https://github.com/EastTexasElectronics/roberthavelaar.dev',
+        ctaLink: 'https://github.com/ToXMon/portfolio-T3-stack',
         content: () => (
             <p>
-                This website was build with the T3 stack using Next.js, TailwindCSS, and Supabase.
+                This website was built with the T3 stack using Next.js, TypeScript, and TailwindCSS, demonstrating modern web development practices and responsive design.
             </p>
         ),
     },

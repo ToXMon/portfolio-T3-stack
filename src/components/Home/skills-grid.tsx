@@ -14,33 +14,33 @@ import {
 export function SkillsGrid() {
     const features = [
         {
-            title: "Frontend Development",
-            description: "Creating visually appealing and user-friendly web interfaces using the latest frontend technologies.",
+            title: "Data Science & Analytics",
+            description: "Extracting insights from complex datasets using advanced statistical methods and machine learning techniques.",
             icon: <IconPolaroidFilled aria-hidden="true" />,
         },
         {
-            title: "Backend Development",
-            description: "Building robust and scalable server-side applications with a focus on performance and security.",
+            title: "Software Development",
+            description: "Building robust and scalable applications with modern programming languages and frameworks.",
             icon: <IconTerminal2 aria-hidden="true" />,
         },
         {
-            title: "eCommerce",
-            description: "Developing customized eCommerce solutions that drive sales and enhance user experience.",
-            icon: <IconCurrencyDollar aria-hidden="true" />,
-        },
-        {
-            title: "SaaS",
-            description: "Creating Software as a Service (SaaS) applications that are efficient, reliable, and easy to use.",
+            title: "Machine Learning",
+            description: "Developing predictive models and AI solutions to solve complex business problems and automate processes.",
             icon: <IconBoxMultiple9 aria-hidden="true" />,
         },
         {
-            title: "Hosting Services",
-            description: "Providing reliable and secure hosting solutions to keep your websites and applications running smoothly.",
+            title: "Process Optimization",
+            description: "Implementing continuous improvement methodologies to enhance efficiency and reduce operational costs.",
+            icon: <IconCurrencyDollar aria-hidden="true" />,
+        },
+        {
+            title: "Engineering Solutions",
+            description: "Designing and implementing technical solutions that bridge the gap between data and actionable business outcomes.",
             icon: <IconHelp aria-hidden="true" />,
         },
         {
-            title: "Electronics Repair",
-            description: "Offering expert repair services for a wide range of electronic devices, from smartphones to laptops.",
+            title: "Data Visualization",
+            description: "Creating compelling visual narratives from data to drive informed decision-making and strategic planning.",
             icon: <IconDeviceIpadCog aria-hidden="true" />,
         },
     ];

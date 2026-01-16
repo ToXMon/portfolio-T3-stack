@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { Menu, X, ChevronDown, Coffee, Mail, FileText } from "lucide-react";
+import { Menu, X, ChevronDown, Mail, FileText } from "lucide-react";
 import Link from "next/link";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { track } from '@vercel/analytics';
@@ -110,11 +110,11 @@ const Navbar = (): React.ReactNode => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const activeProjects = [
-    { name: "SVG 2 Liquid", href: "/S2L" },
-    { name: "File Tree Generator", href: "/file-tree-generator-app" },
+    { name: "Web3 Portfolio", href: "https://toxmon.github.io/web3-portfolio/" },
+    { name: "Data Science Projects", href: "https://github.com/ToXMon" },
     {
-      name: "AiCaseReport.com (Coming Soon)",
-      href: "https://aicasereport.com",
+      name: "GitHub Profile",
+      href: "https://github.com/ToXMon",
       target: "_blank",
       rel: "noopener noreferrer",
     },
@@ -123,17 +123,17 @@ const Navbar = (): React.ReactNode => {
   const connectLinks = [
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/rmhavelaar/",
+      href: "https://www.linkedin.com/in/tolushekoni/",
       target: "_blank",
       rel: "noopener noreferrer",
     },
     {
       name: "GitHub",
-      href: "https://github.com/EastTexasElectronics",
+      href: "https://github.com/ToXMon",
       target: "_blank",
       rel: "noopener noreferrer",
     },
-    { name: "Support Email", href: "mailto:contact@easttexaselectronics.com" },
+    { name: "Support Email", href: "mailto:tolushekoni@gmail.com" },
   ];
 
   return (
@@ -142,28 +142,22 @@ const Navbar = (): React.ReactNode => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-neutral-200">
-              robert<span className="custom-underline">havelaar</span>
+              tolu<span className="custom-underline">shekoni</span>
               <span className="gradient-text">.dev</span>
             </Link>
           </div>
           <div className="hidden flex-grow md:block">
             <div className="ml-10 flex items-center justify-center space-x-4">
               <Dropdown
-                label="Free Apps & Tools"
+                label="Projects"
                 items={activeProjects}
               />
               <Dropdown label="Connect with me" items={connectLinks} />
               <Link
-                href="/rmh-resume-public"
+                href="https://github.com/ToXMon"
                 className="flex items-center text-neutral-200 hover:text-gray-400"
               >
-                Resume <FileText className="ml-2" size={16} />
-              </Link>
-              <Link
-                href="https://buymeacoffee.com/rmhavelaar"
-                className="flex items-center text-neutral-200 hover:text-gray-400"
-              >
-                Support Me <Coffee className="ml-2" size={16} />
+                GitHub <FileText className="ml-2" size={16} />
               </Link>
             </div>
           </div>
@@ -188,7 +182,7 @@ const Navbar = (): React.ReactNode => {
         <div className="md:hidden">
           <div className="space-y-1 px-2 pb-3 pt-2 sm:px-3">
             <Dropdown
-              label="Active Projects & Tools"
+              label="Projects"
               items={activeProjects}
               isMobile={true}
             />
@@ -198,18 +192,10 @@ const Navbar = (): React.ReactNode => {
               isMobile={true}
             />
             <Link
-              href="/rmh-resume-public"
+              href="https://github.com/ToXMon"
               className="flex items-center rounded-md px-3 py-2 text-base font-medium text-neutral-200 hover:text-gray-400"
             >
-              Resume <FileText className="ml-2" size={16} />
-            </Link>
-            <Link
-              href="https://buymeacoffee.com/rmhavelaar"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center rounded-md px-3 py-2 text-base font-medium text-neutral-200 hover:text-gray-400"
-            >
-              Support Me <Coffee className="ml-2" size={16} />
+              GitHub <FileText className="ml-2" size={16} />
             </Link>
           </div>
         </div>

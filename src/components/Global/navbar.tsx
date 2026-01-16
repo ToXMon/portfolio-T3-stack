@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useRef } from "react";
-import { Menu, X, ChevronDown, Coffee, Mail, FileText } from "lucide-react";
+import { Menu, X, ChevronDown, Mail, FileText } from "lucide-react";
 import Link from "next/link";
 import { useOutsideClick } from "@/hooks/use-outside-click";
 import { track } from '@vercel/analytics';

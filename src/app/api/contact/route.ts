@@ -2,11 +2,11 @@ import { NextResponse } from "next/server";
 import sgMail from "@sendgrid/mail";
 import type { MailDataRequired } from "@sendgrid/mail";
 
-if (!process.env.SENDGRID_API_KEY) {
-  throw new Error("SENDGRID_API_KEY is not set in the environment variables");
-}
+const SENDGRID_API_KEY = process.env.SENDGRID_API_KEY;
 
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+if (SENDGRID_API_KEY) {
+  sgMail.setApiKey(SENDGRID_API_KEY);
+}
 
 interface ContactFormData {
   name: string;
@@ -17,6 +17,13 @@ interface ContactFormData {
 
 export async function POST(request: Request) {
   try {
+    if (!SENDGRID_API_KEY) {
+      return NextResponse.json(
+        { error: "Email service is not configured." },
+        { status: 503 },
+      );
+    }
+
     const body = (await request.json()) as ContactFormData;
     const { name, email, reason, message } = body;
 
@@ -29,14 +36,14 @@ export async function POST(request: Request) {
 
     const userMsg: MailDataRequired = {
       to: email,
-      from: "contact@easttexaselectronics.com",
-      subject: "Thank you for contacting East Texas Electronics",
-      text: `Dear ${name},\n\nThank you for contacting us. We have received your message and will get back to you as soon as possible.\n\nBest regards,\nEast Texas Electronics Team`,
+      from: "tolushekoni@gmail.com",
+      subject: "Thank you for contacting Tolu Shekoni",
+      text: `Dear ${name},\n\nThank you for contacting me. I have received your message and will get back to you as soon as possible.\n\nBest regards,\nTolu Shekoni`,
     };
 
     const adminMsg: MailDataRequired = {
-      to: "contact@easttexaselectronics.com",
-      from: "contact@easttexaselectronics.com",
+      to: "tolushekoni@gmail.com",
+      from: "tolushekoni@gmail.com",
       subject: "New Contact Form Submission",
       text: `New contact form submission:\n\nName: ${name}\nEmail: ${email}\nReason: ${reason ?? "Not specified"}\nMessage: ${message}`,
     };

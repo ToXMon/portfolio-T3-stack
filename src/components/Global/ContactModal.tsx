@@ -97,13 +97,11 @@ const ContactModal: React.FC<ContactModalProps> = () => {
                     'Content-Type': 'application/json',
                 },
             })
-            console.log('Form submitted successfully', response.data);
             toast({
                 title: "Success!",
                 description: "Your message has been sent. I will get back to you as soon as possible.",
                 variant: "default",
             });
-            console.log('Toast called');
             setIsOpen(false);
             form.reset();
         } catch (error) {
